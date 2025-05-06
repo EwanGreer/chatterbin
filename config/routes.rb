@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :channels do
+    resources :messages
+  end
+
+  resources :memberships
+  resources :servers
   resource :session
   resources :passwords, param: :token
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

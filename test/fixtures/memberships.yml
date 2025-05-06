@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  server: one
+  role: owner
+  joined_at: 2025-05-06 22:34:05
+
+two:
+  user: two
+  server: two
+  role: admin
+  joined_at: 2025-05-06 22:34:05
