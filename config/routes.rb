@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    get "/", to: "dashboard#index", as: :root
+    resources :users
+    resources :channels
+    resources :messages
+  end
+
+  get "dashboard/index"
+
+  resource :profile,
+    only: %i[show edit update]
+
   resources :channels do
     resources :messages
   end
